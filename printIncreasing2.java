@@ -12,4 +12,4 @@ class main2{
         printIncreasing(n-1);
         System.out.print(n+" ");
     }
-}
+} 
