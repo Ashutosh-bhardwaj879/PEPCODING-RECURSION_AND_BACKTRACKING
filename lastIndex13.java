@@ -4,12 +4,12 @@ class main13 {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
-        int d = scn.nextInt();
+        int x = scn.nextInt();
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
             arr[i] = scn.nextInt();
         }
-        System.out.println(lastIndex(arr, 0, d));
+        System.out.println(lastIndex(arr, 0, x));
         scn.close();
     }
 
@@ -17,7 +17,7 @@ class main13 {
         if (index == arr.length) {
             return -1;
         }
-        int liisa = lastIndex(arr, index + 1, x);
+        int liisa = lastIndex(arr, index + 1, x); // salast_index_in_smaller_array = lastIndex(arr, n + 1, x);
         if (liisa == -1) {
             if (arr[index] == x) {
                 return index;
@@ -27,6 +27,6 @@ class main13 {
         } else {
             return liisa;
         }
-
+        
     }
 }
