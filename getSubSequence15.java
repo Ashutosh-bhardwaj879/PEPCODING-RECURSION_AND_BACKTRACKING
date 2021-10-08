@@ -1,4 +1,3 @@
-import java.sql.Array;
 import java.util.*;
 
 class main15 {
@@ -12,13 +11,13 @@ class main15 {
 
     public static ArrayList<String> getSubSequence(String str) {
         if (str.length() == 0) {
-            ArrayList<String> med = new ArrayList<>();
+            ArrayList<String> med = new ArrayList<String>();
             med.add("");
             return med;
         }
         char ch = str.charAt(0);
         ArrayList<String> recursion_result = getSubSequence(str.substring(1));
-        ArrayList<String> result = new ArrayList<>();
+        ArrayList<String> result = new ArrayList<String>();
         for (String s : recursion_result) {
             result.add("" + s);
         }
