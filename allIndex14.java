@@ -5,7 +5,7 @@ class main14 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
         int[] arr = new int[n];
-        String[] input = br.readLine().split(" ");
+        String[] input = br.readLine().trim().split("\\s+");
         for (int i = 0; i < n; i++) {
             arr[i] = Integer.parseInt(input[i]);
         }
