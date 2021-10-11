@@ -1,6 +1,6 @@
 import java.util.*;
 
-class main19 {
+class main20 {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         String ques = scn.nextLine();
